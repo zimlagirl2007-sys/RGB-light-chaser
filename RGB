@@ -1,0 +1,134 @@
+// The goal of this program is to have the LEDs of the RGB turn off and on whcih resembles the sequence of the light chasing the other
+// This is a Digital Output program
+
+int timeDelay = 500;  
+ 
+
+// the setup function runs once when you press reset or power the board  
+
+
+void setup() {  
+ 
+
+  // initialize digital pin LED_BUILTIN as an output.  
+
+  
+
+  pinMode(13, OUTPUT);  
+
+  
+
+  pinMode(12, OUTPUT);  
+
+  
+
+  pinMode(11, OUTPUT);  
+  
+
+}  
+
+  
+
+// the loop function runs over and over again forever  
+
+  
+
+void loop() {  
+
+  
+
+  digitalWrite(13, 1);// turn the LED on (HIGH is the voltage level)  
+
+  
+
+  digitalWrite(12, 0);// turn the LED off by making the voltage LOW  
+
+  
+
+  digitalWrite(11, 0);// turn the LED off by making the voltage LOW  
+
+  
+
+  delay(timeDelay);   // wait for a second  
+
+  
+
+  digitalWrite(13,0); // turn the LED off by making the voltage LOW  
+
+  
+
+  digitalWrite(12,1) ;// turn the LED on (HIGH is the voltage level)  
+
+  
+
+  digitalWrite(11,0) ;// turn the LED off by making the voltage LOW  
+
+  
+
+  delay(timeDelay);   // wait for a second  
+
+  
+
+  digitalWrite(13, 0); // turn the LED off by making the voltage LOW  
+
+  
+
+  digitalWrite(12, 0);// turn the LED off by making the voltage LOW   
+
+  
+
+  digitalWrite(11, 1);// turn the LED on (HIGH is the voltage level)   
+
+  
+
+  delay(timeDelay);   // wait for a secon  
+ 
+
+  digitalWrite(13,1 ); // turn the LED on by making the voltage HIGH   
+
+  
+
+  digitalWrite(12, 1);// turn the LED on by making the voltage HIGH  
+
+  
+
+  digitalWrite(11, 1);// turn the LED on (HIGH is the voltage level)   
+
+  
+
+  delay(timeDelay);   // wait for a second  
+
+   
+
+   
+
+    digitalWrite(13,0 ); // turn the LED off by making the voltage LOW   
+
+  
+
+  digitalWrite(12, 0);// turn the LED off by making the voltage LOW   
+
+  
+
+  digitalWrite(11, 1);// turn the LED on (HIGH is the voltage level)   
+
+  
+
+  delay(timeDelay);   // wait for a second  
+   
+
+    digitalWrite(13,0 ); // turn the LED off by making the voltage LOW   
+
+  
+
+  digitalWrite(12, 1);// turn the LED on by making the voltage HIGH   
+
+  
+
+  digitalWrite(11, 0);// turn the LED off by making the voltage LOW  
+
+  
+
+  delay(timeDelay);   // wait for a second  
+
+  
